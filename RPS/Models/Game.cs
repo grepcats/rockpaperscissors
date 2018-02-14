@@ -27,8 +27,8 @@ namespace RPS.Models
 
     public void SetPlayers(string player1, string player2)
     {
-      _player1 = "cat";
-      _player2 = "dog";
+      _player1 = player1;
+      _player2 = player2;
     }
   }
 }
