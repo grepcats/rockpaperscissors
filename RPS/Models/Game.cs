@@ -64,7 +64,7 @@ namespace RPS.Models
       }
       else
       {
-        _winner = "DRAWxxxx";
+        _winner = "DRAW";
       }
 
 
