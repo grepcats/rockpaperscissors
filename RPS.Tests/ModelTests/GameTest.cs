@@ -25,7 +25,7 @@ namespace RPS.Tests
     {
       //arrange
       Game newGame = new Game("scissors", "paper");
-      string testSelection = "scissors";
+      string testSelection = "paper";
 
       //act
       string player2Selection = newGame.GetPlayer2();

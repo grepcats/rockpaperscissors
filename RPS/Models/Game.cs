@@ -22,7 +22,7 @@ namespace RPS.Models
 
     public string GetPlayer2()
     {
-      return "hello";
+      return _player2;
     }
   }
 }
