@@ -62,10 +62,15 @@ namespace RPS.Models
       {
         _winner = "Player2";
       }
-      else
+      else if ((player1 == "rock" && player2 == "rock") || (player1 == "paper" && player2 == "paper") || (player1 == "scissors" && player2 == "scissors"))
       {
         _winner = "DRAW";
       }
+      else
+      {
+        _winner = "you screwed up";
+      }
+
 
 
     }

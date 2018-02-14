@@ -21,5 +21,19 @@ namespace RPS.Tests
       //
       Assert.IsInstanceOfType(result, typeof(ViewResult));
     }
+
+    [TestMethod]
+    public void Index_HasCorrectModelType_True()
+    {
+      //arrange
+      ViewResult indexView = new HomeController().Index() as ViewResult;
+
+      //act
+      var result = indexView.ViewData.Model;
+      System.Console.WriteLine("result is" + result);
+
+      //assert
+      Assert.IsInstanceOfType(result, typeof(string));
+    }
   }
 }
