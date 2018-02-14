@@ -19,5 +19,10 @@ namespace RPS.Models
     {
       return _player1;
     }
+
+    public string GetPlayer2()
+    {
+      return "hello";
+    }
   }
 }
