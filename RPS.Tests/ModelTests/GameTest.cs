@@ -73,7 +73,7 @@ namespace RPS.Tests
       Assert.AreEqual(winner, newGame.GetWinner());
     }
     [TestMethod]
-    public void SetWinner_CompareScissorsandPaper_Void()
+    public void SetWinner_CompareScissorsAndPaper_Void()
     {
       //arrange
       Game newGame = new Game("scissors", "paper");
