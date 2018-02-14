@@ -97,5 +97,17 @@ namespace RPS.Tests
       //assert
       Assert.AreEqual(winner, newGame.GetWinner());
     }
+    [TestMethod]
+    public void SetWinner_Draw_Void()
+    {
+      //arrange
+      Game newGame = new Game("paper", "paper");
+      string winner = "DRAW";
+
+      //act
+      newGame.SetWinner("paper", "paper");
+      //assert
+      Assert.AreEqual(winner, newGame.GetWinner());
+    }
   }
 }

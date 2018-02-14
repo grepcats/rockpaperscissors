@@ -62,6 +62,10 @@ namespace RPS.Models
       {
         _winner = "Player2";
       }
+      else
+      {
+        _winner = "DRAWxxxx";
+      }
 
 
     }
