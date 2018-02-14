@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Anagram
+namespace RPS
 {
     public class Program
     {
