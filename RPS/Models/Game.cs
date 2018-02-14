@@ -24,5 +24,11 @@ namespace RPS.Models
     {
       return _player2;
     }
+
+    public void SetPlayers(string player1, string player2)
+    {
+      _player1 = "cat";
+      _player2 = "dog";
+    }
   }
 }

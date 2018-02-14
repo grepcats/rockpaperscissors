@@ -33,5 +33,17 @@ namespace RPS.Tests
       //assert
       Assert.AreEqual(testSelection, player2Selection);
     }
+    [TestMethod]
+    public void SetPlayers_SetPlayers_Void()
+    {
+      //arrange
+      Game newGame = new Game("scissors", "paper");
+      string testSelection = "rock";
+
+      //act
+      newGame.SetPlayers("scissors", testSelection);
+      //assert
+      Assert.AreEqual(testSelection, newGame.GetPlayer2());
+    }
   }
 }
