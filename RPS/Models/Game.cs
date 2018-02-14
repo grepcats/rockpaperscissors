@@ -54,6 +54,14 @@ namespace RPS.Models
       {
         _winner = "Player2";
       }
+      else if (player1 == "paper" && player2 == "rock")
+      {
+        _winner = "Player1";
+      }
+      else if (player1 == "rock" && player2 == "paper")
+      {
+        _winner = "Player2";
+      }
 
 
     }
