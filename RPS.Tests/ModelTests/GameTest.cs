@@ -64,7 +64,7 @@ namespace RPS.Tests
     {
       //arrange
       Game newGame = new Game("rock", "scissors");
-      string winner = "rock";
+      string winner = "Player1";
 
       //act
       newGame.SetWinner("rock", "scissors");

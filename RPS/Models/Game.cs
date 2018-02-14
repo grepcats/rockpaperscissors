@@ -38,7 +38,15 @@ namespace RPS.Models
 
     public void SetWinner(string player1, string player2)
     {
-      _winner = "hello";
+      if (player1 == "rock" && player2 == "scissors")
+      {
+        _winner = "Player1";
+      }
+      else if (player1 == "scissors" && player2 == "rock")
+      {
+        _winner = "Player2";
+      }
+
     }
   }
 }
