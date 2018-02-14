@@ -40,27 +40,27 @@ namespace RPS.Models
     {
       if (player1 == "rock" && player2 == "scissors")
       {
-        _winner = "Player1";
+        _winner = "Player 1 WINS";
       }
       else if (player1 == "scissors" && player2 == "rock")
       {
-        _winner = "Player2";
+        _winner = "Player 2 WINS";
       }
       else if (player1 == "scissors" && player2 == "paper")
       {
-        _winner = "Player1";
+        _winner = "Player 1 WINS";
       }
       else if (player1 == "paper" && player2 == "scissors")
       {
-        _winner = "Player2";
+        _winner = "Player 2 WINS";
       }
       else if (player1 == "paper" && player2 == "rock")
       {
-        _winner = "Player1";
+        _winner = "Player 1 WINS";
       }
       else if (player1 == "rock" && player2 == "paper")
       {
-        _winner = "Player2";
+        _winner = "Player 2 WINS";
       }
       else if ((player1 == "rock" && player2 == "rock") || (player1 == "paper" && player2 == "paper") || (player1 == "scissors" && player2 == "scissors"))
       {

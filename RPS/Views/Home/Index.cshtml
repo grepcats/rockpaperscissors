@@ -2,30 +2,40 @@
 <html>
   <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="~/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Butcherman" rel="stylesheet">
     <meta charset="utf-8">
     <title>ROCK PAPER SCISSORS</title>
   </head>
-  <body>
-    <form action="/result" method="post">
-      <select name="player1-input">
-        <option value=""></option>
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-      </select>
-      <select name="player2-input">
-        <option value=""></option>
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-      </select>
-      <br><br>
-      <button type="submit">Submit</button>
-    </form>
+  <div class="container">
+    <body>
+      <div class="jumbotron">
+        <h1>ROCK PAPER SCISSORS!!!</h1>
+        <h2>The trippiest game of all time</h2>
+      </div>
+      <form action="/result" method="post">
+        <label for="player1-input">Player 1, enter your selection!!!</label>
+        <select name="player1-input" class="form-control">
+          <option value=""></option>
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <label for="player2-input">Player 2, enter your selection!!!</label>
+        <select name="player2-input" class="form-control">
+          <option value=""></option>
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <br><br>
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
 
-    <div>
-      <p>@Model</p>
+      <div>
+        <p class="result">@Model</p>
+      </div>
     </div>
   </body>
 </html>
