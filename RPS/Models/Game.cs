@@ -33,7 +33,7 @@ namespace RPS.Models
 
     public string GetWinner()
     {
-      return "hello";
+      return _winner;
     }
 
     public void SetWinner(string player1, string player2)
