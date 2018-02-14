@@ -30,5 +30,15 @@ namespace RPS.Models
       _player1 = player1;
       _player2 = player2;
     }
+
+    public string GetWinner()
+    {
+      return "hello";
+    }
+
+    public void SetWinner(string player1, string player2)
+    {
+      _winner = "hello";
+    }
   }
 }

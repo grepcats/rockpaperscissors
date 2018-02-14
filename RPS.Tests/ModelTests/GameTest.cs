@@ -45,5 +45,32 @@ namespace RPS.Tests
       //assert
       Assert.AreEqual(testSelection, newGame.GetPlayer2());
     }
+
+    [TestMethod]
+    public void GetWinner_FetchTheWinner_Void()
+    {
+      //arrange
+      Game newGame = new Game("scissors", "paper");
+      string testWinner = "paper";
+
+      //act
+      string winner = newGame.GetWinner();
+      //assert
+      Assert.AreEqual(winner, testWinner);
+    }
+
+    // [TestMethod]
+    // public void SetWinner_CompareRockandScissors_Void()
+    // {
+    //   //arrange
+    //   Game newGame = new Game("rock", "scissors");
+    //   string winner = "rock";
+    //
+    //   //act
+    //   newGame.CompareEntries("rock", "scissors");
+    //
+    //   //assert
+    //   Assert.AreEqual(winner, _winner);
+    // }
   }
 }
